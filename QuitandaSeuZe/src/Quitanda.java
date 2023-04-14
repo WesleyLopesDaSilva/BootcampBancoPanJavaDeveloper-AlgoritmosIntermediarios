@@ -34,3 +34,39 @@ public class Quitanda {
 
     }
 }
+
+/*
+--> versão aceita pela DIO
+import java.util.*;
+
+public class DIO {
+  public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    int kgmorango = input.nextInt();
+    int kgmaca = input.nextInt();
+    
+    double valorMorango = 0;
+    double valorMaca = 0;
+    
+    if(kgmorango <= 5){
+      valorMorango = 2.5 * kgmorango;
+    } else{
+      valorMorango = 2.2 * kgmorango;
+    }
+    
+    if(kgmaca <= 5){
+      valorMaca = 1.8 * kgmaca;
+    } else{
+      valorMaca = 1.5 * kgmaca;
+    }
+    
+    double kgFrutas = kgmorango + kgmaca;
+    double valorCompra = valorMorango + valorMaca;
+        
+    if(kgFrutas > 8 || valorCompra > 25.00 ){
+      valorCompra = valorCompra - (0.1 * valorCompra);
+    }
+    System.out.println(valorCompra);
+  }
+}
+*/
